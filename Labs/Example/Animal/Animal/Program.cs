@@ -9,7 +9,14 @@ namespace Animal
     class Animal
     {
         public void Eat()
-        { 
+        {
+        }
+    }
+
+    class Cat : Animal
+    {
+        public void Meow()
+        {
         }
     }
     class Program
