@@ -42,6 +42,9 @@ namespace Animal
     {
         static void Main(string[] args)
         {
+            Animal animal = new Animal();
+            animal.Eat();
+
         }
     }
 }
