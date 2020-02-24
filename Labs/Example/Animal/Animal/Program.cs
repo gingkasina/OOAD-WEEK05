@@ -14,19 +14,12 @@ namespace Animal
         }
     }
 
-    class Cat : Animal      // 2.1 เพิ่ม class ชื่อ  Animal
-    {
-        public void Meow()  // 2.2 เพิ่มเมธอด Eat()
-        {
-            Console.WriteLine("meowing...");
-        }
-    }
 
     class Dog : Animal
     {
         public void Bark()
         {
-            Console.WriteLine("barking...");    
+            Console.WriteLine("dog big barking...");    
         }
     }
 
@@ -36,16 +29,21 @@ namespace Animal
         {
             Console.WriteLine("weeping...");
         }
+        new public void Bark()
+        {
+            Console.WriteLine("puppy small bark...");
+        }
+
     }
 
     class Program
     {
         static void Main(string[] args)
         {
+            Dog dog = new Dog();
             Puppy puppy = new Puppy();
-            puppy.Eat();
+            dog.Bark();
             puppy.Bark();
-            puppy.Weep();
         }
     }
 }
