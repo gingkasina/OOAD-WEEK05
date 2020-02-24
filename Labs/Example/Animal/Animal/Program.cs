@@ -42,9 +42,10 @@ namespace Animal
     {
         static void Main(string[] args)
         {
-            Animal animal = new Animal();
-            animal.Eat();
-
+            Puppy puppy = new Puppy();
+            puppy.Eat();
+            puppy.Bark();
+            puppy.Weep();
         }
     }
 }
